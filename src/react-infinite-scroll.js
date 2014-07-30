@@ -10,7 +10,7 @@ module.exports = function (React) {
     return React.addons.InfiniteScroll;
   }
   React.addons = React.addons || {};
-  var InfiniteScroll = React.addons.InfiniteScroll = React.createClass({
+  var InfiniteScroll = React.createClass({
     getDefaultProps: function () {
       return {
         pageStart: 0,
@@ -57,8 +57,8 @@ module.exports = function (React) {
       this.detachScrollListener();
     }
   });
-  InfiniteScroll.setDefaultLoader = function (loader) {
-    InfiniteScroll._defaultLoader = loader;
-  };
+  // InfiniteScroll.setDefaultLoader = function (loader) {
+  //   InfiniteScroll._defaultLoader = loader;
+  // };
   return InfiniteScroll;
 };
