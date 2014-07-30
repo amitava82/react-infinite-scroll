@@ -16,8 +16,7 @@ module.exports = function (React) {
         pageStart: 0,
         hasMore: false,
         loadMore: function () {},
-        threshold: 250,
-        loader: InfiniteScroll._defaultLoader
+        threshold: 250
       };
     },
     componentDidMount: function () {
